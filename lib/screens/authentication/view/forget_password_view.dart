@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:organico/config/init/navigation_servise.dart';
 import 'package:organico/core/base/base.dart';
+import 'package:organico/core/components/form_filed_decoration.dart';
 import 'package:organico/core/constants/fonts/font_size_const.dart';
 import 'package:organico/core/constants/fonts/font_style.dart';
 import 'package:organico/core/constants/icons/icons_const.dart';
 import 'package:organico/core/extension/context_extension.dart';
+import 'package:organico/screens/authentication/cubit/auth_cubit.dart';
 import 'package:organico/widgets/appbar/appbar_widget.dart';
 import 'package:organico/widgets/button_widget/elevated_button_widget.dart';
 
@@ -61,15 +64,8 @@ class ForgetPasswordView extends StatelessWidget {
                     ),
                     sizedBox(32, context),
                     TextFormField(
-                      // controller: controller,
-                      decoration: InputDecoration(
-                        contentPadding: const EdgeInsets.symmetric(
-                            horizontal: 15, vertical: 13),
-                        border: OutlineInputBorder(
-                          borderSide: const BorderSide(color: Colors.grey),
-                          borderRadius: BorderRadius.circular(100),
-                        ),
-                      ),
+                       controller: context.watch<AuthCubit>().phoneNumberController,
+                      decoration: FormFiledDecor.decor(""),
                       validator: (v) {},
                     ),
                     sizedBox(79, context),

@@ -4,7 +4,7 @@ import 'package:organico/core/constants/colors/color_const.dart';
 import 'package:organico/core/extension/context_extension.dart';
 
 class AppBarWidget extends StatelessWidget {
-  final SvgPicture leading;
+  final Widget leading;
   final Widget center;
   final Widget trailing;
   const AppBarWidget(
