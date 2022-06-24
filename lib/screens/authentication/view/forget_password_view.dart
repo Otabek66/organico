@@ -75,9 +75,9 @@ class ForgetPasswordView extends StatelessWidget {
                     sizedBox(79, context),
                     ElevatedButtonWidget(
                       onPressed: () {
-                        NavigationService.instance.pushNamed("/newRegistr");
+                        NavigationService.instance.pushNamed("/otacNumber");
                       },
-                      text: "SignIn",
+                      text: "Next",
                     ),
                   ],
                 ),
