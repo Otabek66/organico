@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:organico/core/constants/colors/color_const.dart';
 import 'package:organico/core/extension/context_extension.dart';
 
 class AppBarWidget extends StatelessWidget {
-  final Widget leading;
+  final SvgPicture leading;
   final Widget center;
   final Widget trailing;
   const AppBarWidget(

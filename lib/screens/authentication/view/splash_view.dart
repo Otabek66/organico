@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:organico/config/init/navigation_servise.dart';
 import 'package:organico/core/constants/fonts/font_size_const.dart';
 import 'package:organico/core/constants/fonts/font_style.dart';
 import 'package:organico/core/constants/icons/icons_const.dart';
@@ -10,6 +11,13 @@ import 'package:organico/widgets/text_widget/text_widget.dart';
 
 class SplashView extends StatelessWidget {
   const SplashView({Key? key}) : super(key: key);
+
+   @override
+  void initState() {
+    Future.delayed(const Duration(seconds: 2),(){
+      NavigationService.instance.pushNamedAndRemoveUntil('/signIn');
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
