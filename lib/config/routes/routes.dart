@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:organico/screens/authentication/view/forget_password_view.dart';
 import 'package:organico/screens/authentication/view/new_registration_view.dart';
 import 'package:organico/screens/authentication/view/sign_in_view.dart';
 import 'package:organico/screens/authentication/view/splash_view.dart';
@@ -18,6 +19,8 @@ class Routes{
       return route(SignInView());
        case '/newRegistr':
       return route(NewRegistrationView());
+      case '/forgetPassword':
+      return route(ForgetPasswordView());
 
     }
   }

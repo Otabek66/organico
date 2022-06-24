@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:organico/config/init/navigation_servise.dart';
 import 'package:organico/config/routes/routes.dart';
+import 'package:organico/screens/authentication/cubit/auth_cubit.dart';
 import 'package:organico/screens/authentication/view/splash_view.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MyApp());
+  
+  runApp(MultiBlocProvider(providers: [
+      BlocProvider(create: (context) => AuthCubit()),
+    ], child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {

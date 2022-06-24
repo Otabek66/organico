@@ -22,85 +22,95 @@ class SignInView extends StatelessWidget {
   Scaffold scaffold(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: context.w * 20),
-        child: SizedBox(
-          width: context.width,
-          height: context.height,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            // mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              sizedBox(46, context),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: context.w * 14),
-                child: SizedBox(
-                  width: context.w * 349,
-                  height: context.h * 318.11,
-                  child: Image.asset('assets/auth/images/welcome.png'),
-                ),
-              ),
-              sizedBox(65.89, context),
-              const Text(
-                "Welcome",
-                style: FStyles.headline3s,
-              ),
-              sizedBox(16.0, context),
-              const Text(
-                'Welcome to Organico Mobile Apps. Please fill in the field below to sign in.',
-                style: FStyles.headline5,
-              ),
-              sizedBox(32, context),
-              TextFormField(
-                // controller: controller,
-                decoration: InputDecoration(
-                  contentPadding:
-                      const EdgeInsets.symmetric(horizontal: 15, vertical: 13),
-                  border: OutlineInputBorder(
-                    borderSide:const BorderSide(color: Colors.grey),
-                    borderRadius: BorderRadius.circular(100),
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: context.w * 20),
+          child: SizedBox(
+            width: context.width,
+            height: context.height,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              // mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                sizedBox(46, context),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: context.w * 14),
+                  child: SizedBox(
+                    width: context.w * 349,
+                    height: context.h * 318.11,
+                    child: Image.asset('assets/auth/images/welcome.png'),
                   ),
                 ),
-                validator: (v) {},
-              ),
-              sizedBox(20, context),
-              textFormFiled(),
-              sizedBox(24, context),
-              Padding(
-                padding: EdgeInsets.only(left: context.w * 240),
-                child: const Text('Forgot Password', style: TextStyle(color: Color(0xFF2ECC71),fontSize: FSize.ksmall,fontWeight: FontWeight.w700),),
-              ),
-              sizedBox(44, context),
-              ElevatedButtonWidget(onPressed: (){
-                NavigationService.instance.pushNamed("/newRegistr");
-              }, text: "SignIn", )
-            ],
+                sizedBox(65.89, context),
+                const Text(
+                  "Welcome",
+                  style: FStyles.headline3s,
+                ),
+                sizedBox(16.0, context),
+                const Text(
+                  'Welcome to Organico Mobile Apps. Please fill in the field below to sign in.',
+                  style: FStyles.headline5,
+                ),
+                sizedBox(32, context),
+                TextFormField(
+                  // controller: controller,
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(
+                        horizontal: 15, vertical: 13),
+                    border: OutlineInputBorder(
+                      borderSide: const BorderSide(color: Colors.grey),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                  ),
+                  validator: (v) {},
+                ),
+                sizedBox(20, context),
+                textFormFiled(),
+                sizedBox(24, context),
+                Padding(
+                  padding: EdgeInsets.only(left: context.w * 240),
+                  child: const Text(
+                    'Forgot Password',
+                    style: TextStyle(
+                        color: Color(0xFF2ECC71),
+                        fontSize: FSize.ksmall,
+                        fontWeight: FontWeight.w700),
+                  ),
+                ),
+                sizedBox(44, context),
+                ElevatedButtonWidget(
+                  onPressed: () {
+                    NavigationService.instance.pushNamed("/newRegistr");
+                  },
+                  text: "SignIn",
+                )
+              ],
+            ),
           ),
         ),
-      )),
+      ),
     );
   }
 
   TextFormField textFormFiled() {
     return TextFormField(
-              // controller: passwordController,
-              decoration: InputDecoration(
-                contentPadding:
-                    const EdgeInsets.symmetric(horizontal: 15, vertical: 12),
-                prefixIcon: Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: SvgPicture.asset("assets/auth/icons/lock.svg"),
-                ),
-                suffixIcon: const Icon(
-                  Icons.remove_red_eye_outlined,
-                  size: 22,
-                ),
-                hintText: "Password",
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(100),
-                ),
-              ),
-            );
+      // controller: passwordController,
+      decoration: InputDecoration(
+        contentPadding:
+            const EdgeInsets.symmetric(horizontal: 15, vertical: 12),
+        prefixIcon: Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: SvgPicture.asset("assets/auth/icons/lock.svg"),
+        ),
+        suffixIcon: const Icon(
+          Icons.remove_red_eye_outlined,
+          size: 22,
+        ),
+        hintText: "Password",
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(100),
+        ),
+      ),
+    );
   }
 
   SizedBox sizedBox(double size, BuildContext context) => SizedBox(

@@ -22,4 +22,10 @@ class AuthCubit extends Cubit<AuhtState> {
     bool = !bool;
     emit(AuthInitial()); 
   }
+
+  isChekedfunc(){
+    isCheked = !isCheked;
+    emit(AuthInitial());
+  }
+
 }
