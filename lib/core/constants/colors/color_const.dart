@@ -5,5 +5,6 @@ class ColorConst {
   static Color kbackgroundWhite = Color(0xFFFFFFFF);
   static Color kelevatedButtonTWhite = Color(0xFFFFFFFF);
   static const Color kelevatedButton = Color(0xFFAA0023);
+  static const Color ktextDarkGrey = Color(0xFF696974);
 
 }

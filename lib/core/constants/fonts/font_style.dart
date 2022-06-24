@@ -12,6 +12,7 @@ class FStyles {
   static const TextStyle headline4b = TextStyle(fontSize: FSize.kmedium, fontWeight: FontWeight.w700);
   static const TextStyle headline5 = TextStyle(fontSize: FSize.ksmall);
   static const TextStyle headline5b = TextStyle(fontSize: FSize.ksmall,color: Colors.grey);
+  static const TextStyle headline5s = TextStyle(fontSize: FSize.ksmall,color: ColorConst.ktextDarkGrey);
   static  TextStyle headline5feb = TextStyle(fontSize: FSize.ksmall,color: ColorConst.kelevatedButtonTWhite);
   static const TextStyle headline6 = TextStyle(fontSize: FSize.kextraSmall);
 

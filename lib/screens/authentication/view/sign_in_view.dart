@@ -57,32 +57,14 @@ class SignInView extends StatelessWidget {
                   contentPadding:
                       const EdgeInsets.symmetric(horizontal: 15, vertical: 13),
                   border: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
+                    borderSide:const BorderSide(color: Colors.grey),
                     borderRadius: BorderRadius.circular(100),
                   ),
                 ),
                 validator: (v) {},
               ),
               sizedBox(20, context),
-              TextFormField(
-                // controller: passwordController,
-                decoration: InputDecoration(
-                  contentPadding:
-                      const EdgeInsets.symmetric(horizontal: 15, vertical: 12),
-                  prefixIcon: Padding(
-                    padding: const EdgeInsets.all(12.0),
-                    child: SvgPicture.asset("assets/auth/icons/lock.svg"),
-                  ),
-                  suffixIcon: const Icon(
-                    Icons.remove_red_eye_outlined,
-                    size: 22,
-                  ),
-                  hintText: "Password",
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(100),
-                  ),
-                ),
-              ),
+              textFormFiled(),
               sizedBox(24, context),
               Padding(
                 padding: EdgeInsets.only(left: context.w * 240),
@@ -97,6 +79,28 @@ class SignInView extends StatelessWidget {
         ),
       )),
     );
+  }
+
+  TextFormField textFormFiled() {
+    return TextFormField(
+              // controller: passwordController,
+              decoration: InputDecoration(
+                contentPadding:
+                    const EdgeInsets.symmetric(horizontal: 15, vertical: 12),
+                prefixIcon: Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: SvgPicture.asset("assets/auth/icons/lock.svg"),
+                ),
+                suffixIcon: const Icon(
+                  Icons.remove_red_eye_outlined,
+                  size: 22,
+                ),
+                hintText: "Password",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(100),
+                ),
+              ),
+            );
   }
 
   SizedBox sizedBox(double size, BuildContext context) => SizedBox(
