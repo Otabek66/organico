@@ -69,9 +69,11 @@ class OtacView extends StatelessWidget {
                   ],
                 ),
                 sizedBox(40, context),
-                ElevatedButtonWidget(onPressed: (){
-                  NavigationService.instance.pushNamed("/resetPassword");
-                }, text: "Next")
+                ElevatedButtonWidget(
+                    onPressed: () {
+                      NavigationService.instance.pushNamed("/resetPassword");
+                    },
+                    text: "Next")
               ]),
             )
           ],
