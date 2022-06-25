@@ -72,7 +72,7 @@ class ResetPasswordView extends StatelessWidget {
             sizedBox(48, context),
             ElevatedButtonWidget(
                 onPressed: () {
-                  NavigationService.instance.pushNamed("/forgetPassword");
+                  NavigationService.instance.pushNamed("/main");
                 },
                 text: "Reset Password"),
           ],
