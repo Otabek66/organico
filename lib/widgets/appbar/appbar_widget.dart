@@ -23,12 +23,17 @@ class AppBarWidget extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: context.w * 20),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              leading,
               SizedBox(
-                width: context.w * 24,
+                child: Row(children: [
+                  leading,
+                  SizedBox(
+                    width: context.w * 24,
+                  ),
+                  center,
+                ]),
               ),
-              center,
               trailing,
             ],
           ),
