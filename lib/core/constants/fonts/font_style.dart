@@ -16,8 +16,10 @@ class FStyles {
   static const TextStyle headline5s = TextStyle(fontSize: FSize.ksmall,color: ColorConst.ktextDarkGrey);
   static  TextStyle headline5priblack = TextStyle(fontSize: FSize.ksmall,color: ColorConst.ktextBlack1);
   static  TextStyle headline5textBlack = TextStyle(fontSize: FSize.ksmall,color: ColorConst.ktextBlack,fontWeight: FontWeight.w700);
+  static  TextStyle headline5wish = TextStyle(fontSize: FSize.ksmall,color: ColorConst.ktextBlack,fontWeight: FontWeight.w600);
   static  TextStyle headline5prigreen = TextStyle(fontSize: FSize.ksmall,color: ColorConst.ktextGreen);
   static  TextStyle headline5feb = TextStyle(fontSize: FSize.ksmall,color: ColorConst.kelevatedButtonTWhite);
   static const TextStyle headline6 = TextStyle(fontSize: FSize.kextraSmall);
+  static const TextStyle headline6grey = TextStyle(fontSize: FSize.kextraSmall,color: Color(0xFF92929D),fontWeight: FontWeight.w400);
 
 }
