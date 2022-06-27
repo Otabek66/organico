@@ -6,6 +6,7 @@ import 'package:organico/screens/authentication/view/reset_password.dart';
 import 'package:organico/screens/authentication/view/sign_in_view.dart';
 import 'package:organico/screens/authentication/view/splash_view.dart';
 import 'package:organico/screens/main/view/main_view.dart';
+import 'package:organico/screens/profile/view/edit_profile.dart';
 
 class Routes{
   static final Routes _instance = Routes._init();
@@ -30,6 +31,8 @@ class Routes{
       return route(ResetPasswordView());
        case '/main':
       return route(MainView());
+       case '/editProfile':
+      return route(ProfileEditView());
 
     }
   }

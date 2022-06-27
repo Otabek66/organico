@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:organico/config/init/navigation_servise.dart';
 import 'package:organico/core/base/base.dart';
 import 'package:organico/core/constants/fonts/font_style.dart';
 import 'package:organico/core/constants/icons/icons_const.dart';
@@ -47,7 +48,7 @@ class ProfileView extends StatelessWidget {
                 title: Text(context.watch<ProfileCubit>().profile[ind].name),
                 onTap: (){
                   if(ind==0){
-
+                       NavigationService.instance.pushNamed("/editProfile");
                   }
                 },
                 

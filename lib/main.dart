@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-       initialRoute: "/signIn",
+       initialRoute: "/main",
           onGenerateRoute: Routes.instance.onGenerateRoute,
           navigatorKey: NavigationService.instance.navigatorKey,
     );

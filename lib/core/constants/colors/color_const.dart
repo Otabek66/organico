@@ -10,5 +10,6 @@ class ColorConst {
   static const Color ktextDarkGrey = Color(0xFF696974);
   static const Color ktextgrey = Color(0xFF92929D);
   static Color knavigationUnpressed = Color(0xFF696974);
+  static Color kcontainerBorder = Color(0xFFEAEAEA);
 static Color knavigationPressed = Color(0xFF0F1C2A);
 }
