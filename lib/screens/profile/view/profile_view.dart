@@ -49,6 +49,8 @@ class ProfileView extends StatelessWidget {
                 onTap: (){
                   if(ind==0){
                        NavigationService.instance.pushNamed("/editProfile");
+                  }else if(ind==1){
+                       NavigationService.instance.pushNamed("/orders");
                   }
                 },
                 
