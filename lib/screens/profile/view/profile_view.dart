@@ -51,6 +51,8 @@ class ProfileView extends StatelessWidget {
                        NavigationService.instance.pushNamed("/editProfile");
                   }else if(ind==1){
                        NavigationService.instance.pushNamed("/orders");
+                  }else if(ind==2){
+                       NavigationService.instance.pushNamed("/wishlist");
                   }
                 },
                 

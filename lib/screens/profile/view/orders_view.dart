@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:organico/core/base/base.dart';
 import 'package:organico/core/constants/fonts/font_style.dart';
 import 'package:organico/core/constants/icons/icons_const.dart';
 import 'package:organico/core/extension/context_extension.dart';
+import 'package:organico/screens/home/cubit/home_cubit.dart';
 import 'package:organico/widgets/appbar/appbar_widget.dart';
 import 'package:organico/widgets/button_widget/elevated_button_widget.dart';
 
@@ -42,10 +44,14 @@ class OrdersView extends StatelessWidget {
                 sizedBox(32, context),
                 Text("There is no ongoing order right now. You can order from home.",style: FStyles.headline4b,textAlign: TextAlign.center,),
                 sizedBox(32, context),
-                ElevatedButtonWidget(onPressed: (){}, text: "Go home")
-              ],),
+                ElevatedButtonWidget(onPressed: (){}, text: "Go home"),
+              
+              ],
+              
+              ),
             )
             ],
+
           ),
         ),
       );

@@ -4,6 +4,7 @@ import 'package:organico/config/init/navigation_servise.dart';
 import 'package:organico/config/routes/routes.dart';
 import 'package:organico/screens/authentication/cubit/auth_cubit.dart';
 import 'package:organico/screens/authentication/view/splash_view.dart';
+import 'package:organico/screens/home/cubit/home_cubit.dart';
 import 'package:organico/screens/profile/cubit/profile_cubit.dart';
 
 void main() async{
@@ -12,6 +13,7 @@ void main() async{
   runApp(MultiBlocProvider(providers: [
       BlocProvider(create: (context) => AuthCubit()),
       BlocProvider(create: (context) => ProfileCubit()),
+      BlocProvider(create: (context) => HomeCubit()),
     ], child: const MyApp()));
 }
 
