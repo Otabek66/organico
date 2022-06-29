@@ -55,7 +55,10 @@ class ProfileView extends StatelessWidget {
                        NavigationService.instance.pushNamed("/wishlist");
                   }else if(ind==3){
                        NavigationService.instance.pushNamed("/address");
+                  }else if(ind==4){
+                       NavigationService.instance.pushNamed("/payment");
                   }
+                  
                 },
                 
               );

@@ -10,6 +10,7 @@ import 'package:organico/screens/main/view/main_view.dart';
 import 'package:organico/screens/profile/view/addres_view.dart';
 import 'package:organico/screens/profile/view/edit_profile.dart';
 import 'package:organico/screens/profile/view/orders_view.dart';
+import 'package:organico/screens/profile/view/payment_view.dart';
 
 class Routes{
   static final Routes _instance = Routes._init();
@@ -42,6 +43,8 @@ class Routes{
       return route(WishlistView());
       case '/address':
       return route(AddressView());
+      case '/payment':
+      return route(PaymentView());
 
     }
   }
