@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:organico/config/init/navigation_servise.dart';
 import 'package:organico/core/base/base.dart';
 import 'package:organico/core/constants/colors/color_const.dart';
 import 'package:organico/core/constants/fonts/font_style.dart';
@@ -95,7 +96,9 @@ class PaymentView extends StatelessWidget {
           ),
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-        floatingActionButton: ElevatedButtonWidget(onPressed: (){}, text: "Add Payment"),
+        floatingActionButton: ElevatedButtonWidget(onPressed: (){
+          NavigationService.instance.pushNamed('/addpayment');
+        }, text: "Add Payment"),
       );
 
       SizedBox sizedBox(double size, BuildContext context) => SizedBox(

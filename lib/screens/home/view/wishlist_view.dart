@@ -15,8 +15,8 @@ class WishlistView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<String> images = [
-      context.watch<HomeCubit>().info[0].vegetables.image,
-      context.watch<HomeCubit>().info[0].fruits.image,
+      context.watch<HomeCubit>().info[0].vegetables[0].image,
+      context.watch<HomeCubit>().info[0].fruits[0].image,
       "Paprika",
       "Banana"
     ];

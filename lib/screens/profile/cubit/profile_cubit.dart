@@ -15,5 +15,10 @@ ProfileModel("assets/profile/icons/customer.svg", "Customer Serviece"),
 ProfileModel("assets/profile/icons/password.svg", "Change Password"),
 ProfileModel("assets/profile/icons/logout.svg", "Logout"),
 ];
+String groupValue = "2";
+
+void changeRbutton (dynamic v){
+groupValue = v;
+}
 
 }

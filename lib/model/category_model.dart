@@ -1,8 +1,8 @@
 import 'package:organico/model/product_info_model.dart';
 
 class CategoryModel {
-  ProductInfoModel vegetables;
-  ProductInfoModel fruits;
-  ProductInfoModel meats;
+  List<ProductInfoModel> vegetables;
+  List<ProductInfoModel> fruits;
+  List<ProductInfoModel> meats;
   CategoryModel(this.vegetables,this.fruits,this.meats);
 }

@@ -9,30 +9,33 @@ HomeCubit() : super (HomeInitial());
 
 
 List<CategoryModel> info = [
-  CategoryModel(
-      ProductInfoModel("Paprika", "Vegshop", "4.99", "assets/home/images/paprika.png"),
-      ProductInfoModel("Banana", "FruitMarket", "6.99","assets/home/images/banana.png"), 
-      ProductInfoModel("Fish", "RiybaMarket", "10.99","assets/home/images/paprika.png"),),
-  CategoryModel(
-      ProductInfoModel("Broccoli", "Popey shop", "4.99","assets/home/images/broccoli.png"),
-      ProductInfoModel("Banana", "FruitMarket", "6.99","assets/home/images/paprika.png"), 
-      ProductInfoModel("Fish", "RiybaMarket", "10.99","assets/home/images/paprika.png"),),
-  CategoryModel(
-      ProductInfoModel("Lettuce", "Popey shop", "4.99","assets/home/images/lettuce.png"),
-      ProductInfoModel("Banana", "FruitMarket", "6.99","assets/home/images/paprika.png"), 
-      ProductInfoModel("Fish", "RiybaMarket", "10.99","assets/home/images/paprika.png"),),
-  CategoryModel(
-      ProductInfoModel("Potato", "Popey shop", "4.99","assets/home/images/potato.png"),
-      ProductInfoModel("Banana", "FruitMarket", "6.99","assets/home/images/paprika.png"), 
-      ProductInfoModel("Fish", "RiybaMarket", "10.99","assets/home/images/paprika.png"),),
-  CategoryModel(
-      ProductInfoModel("Carrot", "Popey shop", "4.99","assets/home/images/carrot.png"),
-      ProductInfoModel("Banana", "FruitMarket", "6.99","assets/home/images/paprika.png"), 
-      ProductInfoModel("Fish", "RiybaMarket", "10.99","assets/home/images/paprika.png"),),
-  CategoryModel(
-      ProductInfoModel("Red Onion", "Popey shop", "4.99","assets/home/images/onion.png"),
-      ProductInfoModel("Banana", "FruitMarket", "6.99","assets/home/images/paprika.png"), 
-      ProductInfoModel("Fish", "RiybaMarket", "10.99","assets/home/images/paprika.png"),),
+  CategoryModel([
+    ProductInfoModel("Paprika", "Vegshop", "4.99", "assets/home/images/paprika.png"),
+    ProductInfoModel("Broccoli", "Popey shop", "4.99","assets/home/images/broccoli.png"),
+    ProductInfoModel("Lettuce", "Popey shop", "3.40","assets/home/images/lettuce.png"),
+    ProductInfoModel("Potato", "Popey shop", "4.21","assets/home/images/potato.png"),
+    ProductInfoModel("Carrot", "Popey shop", "4.99","assets/home/images/carrot.png"),
+    ProductInfoModel("Red Onion", "Popey shop", "3.30","assets/home/images/onion.png"),
+
+  ], 
+  [
+    ProductInfoModel("Banana", "FruitMarket", "6.99","assets/home/images/banana.png"), 
+    ProductInfoModel("Banana", "FruitMarket", "6.99","assets/home/images/banana.png"), 
+    ProductInfoModel("Banana", "FruitMarket", "6.99","assets/home/images/banana.png"), 
+    ProductInfoModel("Banana", "FruitMarket", "6.99","assets/home/images/banana.png"), 
+    ProductInfoModel("Banana", "FruitMarket", "6.99","assets/home/images/banana.png"), 
+    ProductInfoModel("Banana", "FruitMarket", "6.99","assets/home/images/banana.png"), 
+  ], 
+  [
+    ProductInfoModel("Fish", "RiybaMarket", "10.99","assets/home/images/paprika.png"),
+    ProductInfoModel("Fish", "RiybaMarket", "10.99","assets/home/images/paprika.png"),
+    ProductInfoModel("Fish", "RiybaMarket", "10.99","assets/home/images/paprika.png"),
+    ProductInfoModel("Fish", "RiybaMarket", "10.99","assets/home/images/paprika.png"),
+    ProductInfoModel("Fish", "RiybaMarket", "10.99","assets/home/images/paprika.png"),
+    ProductInfoModel("Fish", "RiybaMarket", "10.99","assets/home/images/paprika.png"),
+  ])
+    
+ 
 ];
 
   List<Color> color = [
@@ -46,3 +49,18 @@ List<CategoryModel> info = [
   ];
 
 }
+//  CategoryModel(
+//       ProductInfoModel("Banana", "FruitMarket", "6.99","assets/home/images/paprika.png"), 
+//       ProductInfoModel("Fish", "RiybaMarket", "10.99","assets/home/images/paprika.png"),),
+//   CategoryModel(
+//       ProductInfoModel("Banana", "FruitMarket", "6.99","assets/home/images/paprika.png"), 
+//       ProductInfoModel("Fish", "RiybaMarket", "10.99","assets/home/images/paprika.png"),),
+//   CategoryModel(
+//       ProductInfoModel("Banana", "FruitMarket", "6.99","assets/home/images/paprika.png"), 
+//       ProductInfoModel("Fish", "RiybaMarket", "10.99","assets/home/images/paprika.png"),),
+//   CategoryModel(
+//       ProductInfoModel("Banana", "FruitMarket", "6.99","assets/home/images/paprika.png"), 
+//       ProductInfoModel("Fish", "RiybaMarket", "10.99","assets/home/images/paprika.png"),),
+//   CategoryModel(
+//       ProductInfoModel("Banana", "FruitMarket", "6.99","assets/home/images/paprika.png"), 
+//       ProductInfoModel("Fish", "RiybaMarket", "10.99","assets/home/images/paprika.png"),),

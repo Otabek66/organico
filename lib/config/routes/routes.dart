@@ -7,6 +7,7 @@ import 'package:organico/screens/authentication/view/sign_in_view.dart';
 import 'package:organico/screens/authentication/view/splash_view.dart';
 import 'package:organico/screens/home/view/wishlist_view.dart';
 import 'package:organico/screens/main/view/main_view.dart';
+import 'package:organico/screens/profile/view/add_paymetn.dart';
 import 'package:organico/screens/profile/view/addres_view.dart';
 import 'package:organico/screens/profile/view/edit_profile.dart';
 import 'package:organico/screens/profile/view/orders_view.dart';
@@ -45,6 +46,8 @@ class Routes{
       return route(AddressView());
       case '/payment':
       return route(PaymentView());
+       case '/addpayment':
+      return route(AddPaymentView());
 
     }
   }
